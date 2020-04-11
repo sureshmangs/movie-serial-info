@@ -38,8 +38,8 @@ export class SearchForm extends Component {
     }
 }
 
-const mapSateToProps = state => ({
+const mapStateToProps = state => ({
     text: state.movies.text
 })
 
-export default connect(mapSateToProps, { searchMovie, fetchMovies, setLoading })(SearchForm);
+export default connect(mapStateToProps, { searchMovie, fetchMovies, setLoading })(SearchForm);
